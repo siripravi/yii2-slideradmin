@@ -100,8 +100,9 @@ class SliderImage extends \yii\db\ActiveRecord
 	 */
 	public function render($version,$alt='',$htmlOptions=array())
 	{
-		$src = \Yii::$app->controller->module->slider->getURL($this->id,$version);
+		$src = \Yii::$app->getModule('slider')->slider->getURL($this->id,$version);
                 $htmlOptions['alt'] = $alt;
+				
 		return Html::img($src,$htmlOptions);
 	}
 

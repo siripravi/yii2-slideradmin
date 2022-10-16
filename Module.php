@@ -30,7 +30,7 @@ class Module extends \yii\base\Module
 					//'small'=>array('width'=>120,'height'=>120),
 					'small' => ['width' => 72, 'height' => 72],
 					'medium' => ['width' => 200, 'height' => 150],
-					'large' => ['width' => 640, 'height' => 640],
+					'large' => ['width' => 1920, 'height' => 566],
 				],
 				
 			   ]

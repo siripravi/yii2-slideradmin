@@ -68,16 +68,18 @@ class SliderImageController extends Controller {
     public function actionUpdate($id)
     {
 		$model = $this->findModelMulti($id);
-        $src = null;
-		if ($model->load(Yii::$app->request->post()) && $model->save()) {	
-           	Yii::$app->session->setFlash('success', Yii::t('app', 'Information added successfully.'));
-            return $this->redirect(['index','id'=>$model->slider_id]);
-		}
-		$path = \Yii::$app->controller->module->slider
+        $src =$model->render("large");
+		if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $path = \Yii::$app->controller->module->slider
 			->createVersion($model->id, "large");
 			if($path){
 				$src = $model->render("large");
-			}
+			}			
+           	Yii::$app->session->setFlash('success', Yii::t('app', 'Information added successfully.'));
+            return $this->redirect(['index','id'=>$model->slider_id]);
+		}
+		
         return $this->render('update', [
             'model' => $model, 'src' => $src
         ]);
