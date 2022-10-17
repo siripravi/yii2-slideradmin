@@ -1,4 +1,5 @@
-# yii2-slideradmin
-==================
-Under Heavy development. Not ready for production yet.
+# Slide Show Image Administration using Yii2
+============================================
+
+
 -----------------------------------------------------
