@@ -70,7 +70,7 @@ Thats all regarding backend.
 
 You can view an example slider in frontend by placing this code in any view/layout file of your applacation:
 ```php
-     use siripravi\slideradmin\widgets\HomeSlider;
+ use siripravi\slideradmin\widgets\HomeSlider;
     
  echo HomeSlider::widget([
     'id' => 'home-slider',
