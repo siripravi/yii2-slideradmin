@@ -1,0 +1,25 @@
+{
+    "name": "siripravi/yii2-slideradmin",
+    "description": "Yii2 Image slider admin",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","slider","image upload"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Pravinya",
+            "email": "provdigi@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "omgdef/yii2-multilingual-behavior": "~2.1",
+	"2amigos/yii2-ckeditor-widget": "2.1.0",
+	"yiisoft/yii2-bootstrap4": "~2.0.0"
+       
+    },
+    "autoload": {
+        "psr-4": {
+            "siripravi\\slideradmin\\": ""
+        }
+    }
+}
