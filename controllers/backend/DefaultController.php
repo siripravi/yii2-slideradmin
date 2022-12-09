@@ -1,7 +1,6 @@
 <?php
 
 namespace siripravi\slideradmin\controllers\backend;
-use dench\sortable\actions\SortingAction;
 use Yii;
 use siripravi\slideradmin\models\Slider;
 use yii\data\ActiveDataProvider;
@@ -33,10 +32,7 @@ class DefaultController extends Controller
     public function actions()
     {
         return [
-          /*  'sorting' => [
-                'class' => SortingAction::class,
-                'query' => Brand::find(),
-            ],   */
+         
         ]; 
     }
 
