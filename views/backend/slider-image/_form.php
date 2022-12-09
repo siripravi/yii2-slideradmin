@@ -4,11 +4,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use dosamigos\ckeditor\CKEditor;
-use common\modules\language\models\Language;
+use siripravi\slideradmin\models\Language;
 use yii\helpers\Url;
-/* @var $this yii\web\View */
-/* @var $model dench\app\models\app */
-/* @var $form yii\widgets\ActiveForm */
 
 ?>
 <div class="app-form">
