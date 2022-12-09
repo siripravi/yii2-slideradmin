@@ -1,8 +1,8 @@
 {
     "name": "siripravi/yii2-slideradmin",
-    "description": "Yii2 Image slider admin",
+    "description": "Multilingual Slider image administration for Yii2 framework",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","slider","image upload"],
+    "keywords": ["yii2","extension","slider","carousel", "multilingual","image upload"],
     "license": "BSD-3-Clause",
     "authors": [
         {
