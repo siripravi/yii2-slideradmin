@@ -12,7 +12,7 @@ $this->title = Yii::t('app', 'Slider');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
-<div class="col-6">
+
  <div class="card card-primary card-outline product-update">
 <div class="card-header ">
 <p class="card-title ml-auto p-2 pull-right">
@@ -70,5 +70,4 @@ $this->params['breadcrumbs'][] = $this->title;
 	</div>
 </div>
 
-</div>
 </div>
