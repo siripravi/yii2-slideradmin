@@ -27,7 +27,7 @@ $this->registerJs(
 
 <div class="row">   
    
-<div class="col-6 flex-column"> 
+<div class="flex-column"> 
      
 	<?php Pjax::begin(['id' => 'allslides']) ?>
     <?= GridView::widget([
