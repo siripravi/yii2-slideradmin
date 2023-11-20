@@ -33,7 +33,7 @@ class Language extends ActiveRecord
      */
     public static function tableName()
     {
-        return 'nxt_language';
+        return '{{%language}}';
     }
 
     /**
