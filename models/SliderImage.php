@@ -32,7 +32,7 @@ class SliderImage extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'nxt_slider_image';
+        return '{{%slider_image}}';
     }
 	
 	/**
