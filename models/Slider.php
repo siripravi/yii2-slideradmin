@@ -28,7 +28,7 @@ class Slider extends ActiveRecord
      */
     public static function tableName()
     {
-        return 'nxt_slider';
+        return '{{%slider}}';
     }
 
     /**
