@@ -58,7 +58,7 @@ Edit your application configuration file `config/web.php` as following:
 ```
 Create database tables by running the command from application root directory:
 ```
-     php yii migrate --migrationPath="siripravi/yii2-slideradmin/migrations"
+     php yii migrate --migrationPath="@vendor/siripravi/yii2-slideradmin/migrations"
 ```
 Now, Navigate to `http://<your site name>/admin`
 
