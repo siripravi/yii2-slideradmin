@@ -1,15 +1,15 @@
 <?php
 
-namespace siripravi\slideradmin\widgets;
+namespace app\widgets;
 use Yii;
 use yii\bootstrap4\BootstrapPluginAsset;
-use yii\bootstrap4\Html;
+use yii\bootstrap5\Html;
 use yii\bootstrap4\Widget;
 use yii\helpers\ArrayHelper;
 use siripravi\slideradmin\models\Slider;
 use siripravi\slideradmin\models\SliderImage;
 
-class HomeSlider extends \yii\bootstrap4\Carousel
+class HomeSlider extends \yii\bootstrap5\Carousel
 {
     public $thumbnails = [];
 	//public $slides = [];
@@ -36,4 +36,3 @@ class HomeSlider extends \yii\bootstrap4\Carousel
 		}
 	}
 }
- 
