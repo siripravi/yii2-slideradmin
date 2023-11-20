@@ -85,5 +85,5 @@ You can view an example slider in frontend by placing this code in any view/layo
 ```
 ## Credits
 
-- [https://github.com/dench/yii2-language]
-- [https://github.com/OmgDef/yii2-multilingual-behavior]
+- [Language Module By Alexey Dench](https://github.com/dench/yii2-language)
+- [Multilingual Behavior for Yii2](https://github.com/OmgDef/yii2-multilingual-behavior)
