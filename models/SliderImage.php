@@ -52,6 +52,7 @@ class SliderImage extends \yii\db\ActiveRecord
 		   ],*/
 		  [
 		   'class' => LanguageBehavior::className(),
+			 'tableName' => '{{%slider_image_lang}}', 
 		    'langForeignKey' => 'slider_image_id',
 		  ], 
 		  TimestampBehavior::className()
