@@ -19,7 +19,7 @@ use yii\helpers\Url;
     
     <ul class="nav nav-tabs">
       <?php foreach (Language::suffixList() as $suffix => $name) : ?>
-                    <li class="nav-item use-max-space"><a href="#lang<?= $suffix ?>" class="nav-link <?= empty($suffix) ? ' active': '' ?>" data-toggle="tab"><?= $name ?></a></li>
+                    <li class="nav-item use-max-space"><a href="#lang<?= $suffix ?>" class="nav-link <?= empty($suffix) ? ' active': '' ?>" data-bs-toggle="tab"><?= $name ?></a></li>
                 <?php endforeach; ?>  
       
     </ul>
