@@ -23,14 +23,17 @@
     "yiisoft/yii2-bootstrap5": "~2.0.2",
     "omgdef/yii2-multilingual-behavior": "~2.1",
     "2amigos/yii2-ckeditor-widget": "~2.1"
-   
   },
   "autoload": {
     "psr-4": {
-      "siripravi\\slideradmin\\": "src/"     
+      "siripravi\\slideradmin\\": "src/"
     }
   },
   "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    },
+    "process-timeout": 1800,
     "fxp-asset": {
       "enabled": false
     }
