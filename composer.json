@@ -18,15 +18,27 @@
     }
   ],
   "require": {
-    "php": ">=7.2.5",
-    "yiisoft/yii2": "^2.0.42",
+    "php": ">=7.4.0",
+    "yiisoft/yii2": "~2.0.45",
+    "yiisoft/yii2-bootstrap5": "~2.0.2",
     "omgdef/yii2-multilingual-behavior": "~2.1",
-    "2amigos/yii2-ckeditor-widget": "~2.1",
-    "yiisoft/yii2-bootstrap4": "~2.0.0"
+    "2amigos/yii2-ckeditor-widget": "~2.1"
+   
   },
   "autoload": {
     "psr-4": {
-      "siripravi\\slideradmin\\": ""
+      "siripravi\\slideradmin\\": "src/"     
     }
-  }
+  },
+  "config": {
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }

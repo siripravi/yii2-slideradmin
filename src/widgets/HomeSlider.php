@@ -2,9 +2,9 @@
 
 namespace app\widgets;
 use Yii;
-use yii\bootstrap4\BootstrapPluginAsset;
+use yii\bootstrap5\BootstrapPluginAsset;
 use yii\bootstrap5\Html;
-use yii\bootstrap4\Widget;
+use yii\bootstrap5\Widget;
 use yii\helpers\ArrayHelper;
 use siripravi\slideradmin\models\Slider;
 use siripravi\slideradmin\models\SliderImage;
