@@ -6,31 +6,38 @@ use yii\widgets\ActiveForm;
 use dosamigos\ckeditor\CKEditor;
 use siripravi\slideradmin\models\Language;
 use yii\helpers\Url;
+use marqu3s\summernote\Summernote;
 
 ?>
 <div class="app-form">
-   <div class="card card-primary"><?php 	
-          if($src){
-           echo Html::img(Url::to('@web/files/images/versions/large/'.$model->filename));
-			//
-		  }
-			?></div>
+    <div class="card card-primary"><?php
+                                    if ($src) {
+                                        echo Html::img(Url::to('@web/files/images/versions/large/' . $model->filename));
+                                        //
+                                    }
+                                    ?></div>
     <?php $form = ActiveForm::begin(); ?>
-    
+
     <ul class="nav nav-tabs">
-      <?php foreach (Language::suffixList() as $suffix => $name) : ?>
-                    <li class="nav-item use-max-space"><a href="#lang<?= $suffix ?>" class="nav-link <?= empty($suffix) ? ' active': '' ?>" data-bs-toggle="tab"><?= $name ?></a></li>
-                <?php endforeach; ?>  
-      
+        <?php foreach (Language::suffixList() as $suffix => $name) : ?>
+            <li class="nav-item use-max-space"><a href="#lang<?= $suffix ?>" class="nav-link <?= empty($suffix) ? ' active' : '' ?>" data-bs-toggle="tab"><?= $name ?></a></li>
+        <?php endforeach; ?>
+
     </ul>
 
     <div class="tab-content">
-        
+
         <?php foreach (Language::suffixList() as $suffix => $name) : ?>
-             <div class="tab-pane fade<?php if (empty($suffix)) echo 'show active'; ?>" id="lang<?= $suffix ?>">
-			    <?= $form->field($model, 'title' . $suffix)->textInput(['maxlength' => true]) ?>
+            <div class="tab-pane fade<?php if (empty($suffix)) echo 'show active'; ?>" id="lang<?= $suffix ?>">
+                <?= $form->field($model, 'title' . $suffix)->textInput(['maxlength' => true]) ?>
                 <!--?= $form->field($model, 'html' . $suffix)->textArea(); ?-->
-				<?= $form->field($model, 'html' . $suffix)->widget(CKEditor::className(), [
+                <?= $form->field($model, 'html')->widget(Summernote::className(), [
+                    'clientOptions' => [
+                        'language' => Yii::$app->language,
+                        'allowedContent' => true,
+                    ]
+                ]); ?>
+                <!-- = $form->field($model, 'html' . $suffix)->widget(CKEditor::className(), [
                     'preset' => 'full',
                     'options' => [
                         'id' => 'pagetext' . $suffix,
@@ -40,7 +47,7 @@ use yii\helpers\Url;
                         'language' => Yii::$app->language,
                         'allowedContent' => true,
                     ]
-                ]) ?>
+                ]) ?-->
             </div>
         <?php endforeach; ?>
 
