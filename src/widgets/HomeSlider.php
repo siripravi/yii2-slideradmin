@@ -1,6 +1,6 @@
 <?php
 
-namespace app\widgets;
+namespace siripravi\slideradmin\widgets;
 use Yii;
 use yii\bootstrap5\BootstrapPluginAsset;
 use yii\bootstrap5\Html;
